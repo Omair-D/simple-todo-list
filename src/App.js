@@ -28,6 +28,10 @@ function addItem() {
 
 }
 
+function deleteItem(id){
+
+}
+
   return (
     <div className="App">
       {/*1. Header */}
@@ -46,7 +50,7 @@ function addItem() {
       <ul>
       {items.map(item => {
         return(
-          <li key={item.id}>{item.value}</li>
+          <li key={item.id}>{item.value}<button onClick={() => deleteItem(item.id)}>❌</button></li>
         ) 
     })}
 
