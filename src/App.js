@@ -4,12 +4,28 @@ import './App.css';
 function App() {
 // State hook
 const [newItem, setNewItem] = useState("");
-
+const [items, setItems] = useState([]);
 
 // Helper Functions 
 
 function addItem() {
-  console.log(newItem)
+
+  if (!newItem){
+    alert("Please Enter an Item.")
+    return;
+  }
+  
+  const item = {
+    id: Math.floor(Math.random()*1000),
+    value: newItem
+  };
+
+  setItems(oldList => [...oldList, item]);
+
+  setNewItem("");
+
+  console.log(items);
+
 }
 
   return (
