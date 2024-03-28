@@ -1,6 +1,17 @@
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+// State hook
+const [newItem, setNewItem] = useState("");
+
+
+// Helper Functions 
+
+function addItem() {
+  console.log(newItem)
+}
+
   return (
     <div className="App">
       {/*1. Header */}
@@ -10,9 +21,19 @@ function App() {
       <input
       type ="text"
       placeholder = 'Add an item'
+      onChange={e => setNewItem(e.target.value)}
       />
-      {/* 3. Unordered list wiht list items */}
 
+      <button onClick={() => addItem()}>Add</button>
+
+      {/* 3. Unordered list wiht list items */}
+      <ul>
+      <li>Do homework</li>
+      <li>Study for test</li>
+      <li>Hangout with friends</li>
+      <li>Water the plants</li>
+
+      </ul>
 
     </div>
   );
