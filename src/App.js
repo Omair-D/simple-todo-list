@@ -44,10 +44,11 @@ function addItem() {
 
       {/* 3. Unordered list wiht list items */}
       <ul>
-      <li>Do homework</li>
-      <li>Study for test</li>
-      <li>Hangout with friends</li>
-      <li>Water the plants</li>
+      {items.map(item => {
+        return(
+          <li key={item.id}>{item.value}</li>
+        ) 
+    })}
 
       </ul>
 
