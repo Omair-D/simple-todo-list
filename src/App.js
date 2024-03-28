@@ -36,7 +36,7 @@ function deleteItem(id){
   return (
     <div className="App">
       {/*1. Header */}
-      <h1>Simple Todo List</h1>
+      <h1>What do you have todo?</h1>
 
       {/* 2. Input (input along with button) */}
       <input
