@@ -51,7 +51,7 @@ function deleteItem(id){
       <ul>
       {items.map(item => {
         return(
-          <li key={item.id}>{item.value}<button onClick={() => deleteItem(item.id)}>❌</button></li>
+          <li key={item.id}>{item.value}<button className='delete-button' onClick={() => deleteItem(item.id)}>❌</button></li>
         ) 
     })}
 
