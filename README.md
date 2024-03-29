@@ -1,3 +1,5 @@
+# Simple Todo List
+
 ![](https://github.com/Omair-D/simple-todo-list/blob/master/gif/todogif.gif)
 
 
