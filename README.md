@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+![](https://github.com/Omair-D/simple-todo-list/blob/master/gif/todogif.gif)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
